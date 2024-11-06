@@ -1,0 +1,74 @@
+/* Styling untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+/* Styling untuk container */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Styling untuk judul utama */
+h1 {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk kolom dan baris tabel */
+th, td {
+    padding: 10px;
+    border: 0 solid #ddd;
+    text-align: center;
+}
+
+/* Styling untuk judul kolom tabel */
+th {
+    background-color: #333;
+    color: white;
+    cursor: pointer; /* Menambahkan kursor pointer pada header kolom */
+    position: relative; /* Untuk menempatkan panah */
+}
+
+/* Efek saat kolom disorting */
+th.sorted-asc:after {
+    content: " ↑"; /* Menambahkan tanda panah naik */
+    color: green;
+}
+
+th.sorted-desc:after {
+    content: " ↓"; /* Menambahkan tanda panah turun */
+    color: red;
+}
+
+/* Styling untuk subjudul */
+h2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
