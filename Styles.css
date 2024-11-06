@@ -72,3 +72,53 @@ h2 {
     margin: 0;
     margin-bottom: 5px;
 }
+
+/* Media Queries untuk Responsivitas */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    /* Membuat tabel lebih mudah dibaca pada layar kecil */
+    table, th, td {
+        border: none; /* Menghilangkan border tabel pada layar kecil */
+    }
+
+    /* Mengatur teks agar lebih mudah dibaca */
+    th, td {
+        text-align: left;
+        display: block;
+    }
+}
