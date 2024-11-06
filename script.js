@@ -22,16 +22,36 @@ function sortTable(n) {
             x = rows[i].getElementsByTagName("TD")[n];
             y = rows[i + 1].getElementsByTagName("TD")[n];
 
-            // Cek apakah baris harus diswitch
-            if (dir == "asc") {
-                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                    shouldSwitch = true;
-                    break;
+            // Cek apakah tipe data pada kolom yang dipilih adalah angka
+            var xText = x.innerHTML.toLowerCase();
+            var yText = y.innerHTML.toLowerCase();
+
+            // Mengurutkan berdasarkan teks atau angka
+            if (isNaN(xText) && isNaN(yText)) {
+                // Jika teks (seperti nama hero), urutkan berdasarkan abjad
+                if (dir == "asc") {
+                    if (xText > yText) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (xText < yText) {
+                        shouldSwitch = true;
+                        break;
+                    }
                 }
-            } else if (dir == "desc") {
-                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                    shouldSwitch = true;
-                    break;
+            } else {
+                // Jika angka, urutkan berdasarkan nilai numerik
+                if (dir == "asc") {
+                    if (parseInt(xText) > parseInt(yText)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (parseInt(xText) < parseInt(yText)) {
+                        shouldSwitch = true;
+                        break;
+                    }
                 }
             }
         }
