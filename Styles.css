@@ -6,7 +6,7 @@ body {
     background-image: url('background3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scrool;
     background-position: center;
     color: white;
 }
