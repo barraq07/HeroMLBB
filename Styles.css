@@ -95,20 +95,20 @@ h2 {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .container {
-        padding: 7px;
-        font-size: 11px;
+        padding: 6px;
+        font-size: 10px;
     }
 
     table {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     th, td {
-        padding: 5px;
+        padding: 4px;
     }
 
     /* Membuat tabel lebih mudah dibaca pada layar kecil */
